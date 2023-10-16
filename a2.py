@@ -1,5 +1,6 @@
 from typing import List
-
+pattern = ("_", "y", "%")
+source = ("x", "y", "z")
 
 def match(pattern: List[str], source: List[str]) -> List[str]:
     """Attempts to match the pattern to the source.
@@ -96,3 +97,4 @@ if __name__ == "__main__":
     assert match(["x", "%", "z"], ["x", "y", "z", "z", "z"]) == None, "test 15 failed"
 
     print("All tests passed!")
+    print (match(pattern, source))
